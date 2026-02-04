@@ -16,9 +16,9 @@ const Register = () => {
   return (
     <form onSubmit={submit}>
       <h2>Register</h2>
-      <input placeholder="Name" onChange={e => setForm({...form,name:e.target.value})}/>
-      <input placeholder="Email" onChange={e => setForm({...form,email:e.target.value})}/>
-      <input type="password" placeholder="Password" onChange={e => setForm({...form,password:e.target.value})}/>
+      <input type="name" name="name" placeholder="Name" onChange={e => setForm({...form,name:e.target.value})}/>
+      <input type="email" name="email" placeholder="Email" onChange={e => setForm({...form,email:e.target.value})}/>
+      <input type="password" name="password" placeholder="Password" onChange={e => setForm({...form,password:e.target.value})}/>
       <button>Register</button>
     </form>
   );
